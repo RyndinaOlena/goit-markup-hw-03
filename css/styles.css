@@ -61,20 +61,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
 }
 
 .menu-link {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.6;
+  margin-right: 91px;
   text-decoration: none;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
+
 }
 
 .logo .blue {
@@ -86,14 +89,24 @@ body {
 }
 
 .head-list {
+  padding: 0;
+  margin: 0;
   align-items: center;
   display: flex;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   list-style: none;
 }
 
 .list-nav {
+
+  padding-top: 34px;
+  padding-bottom: 34px;
   margin-right: 40px;
+}
+
+.list-nav:last-child {
+  margin: 0;
+
 }
 
 .contacts {
@@ -103,12 +116,13 @@ body {
   padding: 0;
 }
 
-.contacts li {
-  padding-right: 50px;
+.contacts-link {
+  margin-right: 30px;
+
 }
 
 .contacts li:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .link {
@@ -133,18 +147,16 @@ body {
 
 /* choose */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 600px;
   background-color: #2F303A;
-  letter-spacing: 0.06em;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
   color: var(--body-color-basic);
   font-weight: 900;
   font-size: 44px;
@@ -172,38 +184,40 @@ body {
 
 /* <!-- Чим ми займаємося --> */
 
-
 .work {
   display: flex;
-  margin: 0 0 94px 0;
-  padding: 0;
+  gap: 30px;
+  margin: 0;
+  padding: 94px 0 0 0;
+  justify-content: space-between;
   line-height: 1.2;
   color: var(--title-text-color);
   list-style: none;
 }
 
-.work li {
-  padding-right: 0;
-}
-
-.work li:last-child {
-  padding-right: 0;
-}
 
 .work-title {
   line-height: 1.15;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
 }
+
 
 .work-text {
   line-height: 1.71;
   color: var(--main-color-text);
   letter-spacing: 0.03em;
+  padding: 0;
+  margin: 10px 0 0 0;
+
 }
 
 /* Приклади */
 .examples-title {
+  padding: 0 0 50px 0;
+  margin: 0;
   font-size: 36px;
   Line-height: 1.2;
   letter-spacing: 0.03em;
@@ -220,12 +234,12 @@ body {
   padding: 0;
 }
 
-.examples-list li {
-  padding-right: 30px;
+.examples-list-li {
+  display: block;
 }
 
 .examples-list li:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 /* < !-- Наша команда --> */
@@ -267,8 +281,13 @@ body {
   margin-right: 0;
 }
 
+.best-team-descr {
+  padding: 30px;
+}
+
 .name {
   font-weight: 500;
+  margin: 0 0 10px 0;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -277,6 +296,7 @@ body {
 
 .profession {
   color: var(--main-color-text);
+  margin: 0;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -290,6 +310,7 @@ body {
 
 .filter {
   display: flex;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 56px;
 }
@@ -306,7 +327,6 @@ body {
   font-family: inherit;
   letter-spacing: 0.03em;
   padding: 6px 25px;
-  margin: 0 4px;
   height: 38px;
   border-radius: 4px;
 }
@@ -336,9 +356,12 @@ body {
   box-shadow: 0 0 1px #888;
 }
 
+.features-descr {
+  padding: 20px 24px;
+}
 
 .title {
-  padding: 0 24px 0 24px;
+  margin: 0 0 4px 0;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 2px;
@@ -352,7 +375,7 @@ body {
 }
 
 .menu {
-  padding: 0 24px 20px 24px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.9;
   color: var(--main-color-text);
@@ -402,8 +425,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-.footer-list li {
+.footer-list-item {
   margin-bottom: 9px;
+}
+
+.footer-list-item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-nav {
