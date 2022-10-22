@@ -183,12 +183,15 @@ body {
 }
 
 /* <!-- Чим ми займаємося --> */
+.work-section {
+  padding: 94px 0 0 0;
+}
 
 .work {
   display: flex;
   gap: 30px;
   margin: 0;
-  padding: 94px 0 0 0;
+  padding: 0;
   justify-content: space-between;
   line-height: 1.2;
   color: var(--title-text-color);
@@ -224,6 +227,7 @@ body {
   text-align: center;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
+  margin: 0 0 0 50px;
 }
 
 .examples-list {
@@ -275,7 +279,9 @@ body {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-
+img {
+  display: block;
+}
 
 .best-team-item:last-child {
   margin-right: 0;
@@ -312,7 +318,7 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .menu-button {
@@ -347,6 +353,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   text-decoration: none;
 }
